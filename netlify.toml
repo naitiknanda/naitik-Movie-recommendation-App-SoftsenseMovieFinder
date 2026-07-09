@@ -1,9 +1,9 @@
 [build]
-  # Forces Netlify to jump directly into your project folder first
+  # Moves into your project folder first
   base = "cineverse"
   
-  # Runs the build script right inside the project folder
+  # Runs the build command from inside cineverse
   command = "npm run build"
   
-  # Points directly to the generated dist folder inside cineverse
-  publish = "cineverse/dist"
+  # Points directly to the compiled dist folder relative to the base
+  publish = "dist"
